@@ -13,8 +13,8 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-let celsius = prompt("Введите температуру в градусах Цельсия:");
-celsius = parseFloat(celsius);
 
-let fahrenheit = (9 / 5) * celsius + 32;
+const celsius = parseFloat(prompt("Введите температуру в градусах Цельсия:"))
+
+const fahrenheit = (9 / 5) * celsius + 32;
 alert(`Цельсий: ${celsius}, Фаренгейт: ${fahrenheit.toFixed(2)}`);
