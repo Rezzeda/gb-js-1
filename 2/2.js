@@ -6,4 +6,4 @@
 */
 
 const test = confirm("У вас много денег?");
-test === true ? console.log("Скоро будем у вас ;)") : console.log("До свидания.");
+test ? console.log("Скоро будем у вас ;)") : console.log("До свидания.");

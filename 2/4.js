@@ -24,5 +24,5 @@
 */
 
 const num = Number(prompt('Введите целое число'));
-console.log(`В числе ${num} количество сотен: ${Math.floor((num%1000)/100)}, десятков: ${Math.floor((num%100)/10)}, единиц: ${num%10}`);
+console.log(`В числе ${num} количество сотен: ${Math.floor((num%1000) / 100)}, десятков: ${Math.floor((num % 100) / 10)}, единиц: ${num % 10}`);
 

@@ -20,3 +20,4 @@ if (positive > 0 && negative < 0) {
 } else {
     console.log('Одно или более значений некорректно.');
 }
+
