@@ -11,13 +11,13 @@
 
 const num1 = Number(prompt('Введите число'));
 
-if (Number.isNaN(num1)) {
+if (Number.isFinite(num1)) {
     console.log('Значение задано неверно');
 } else {
     excludeTaxes(num1);
 }
 
 function excludeTaxes(num) {
-    const result = num - (0.13 * num);
+    const result = Math.round(num - (0.13 * num));
     console.log(`Размер заработной платы за вычетом налогов равен ${result}.`);
 }

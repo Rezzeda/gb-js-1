@@ -10,7 +10,7 @@
 const num = Number(prompt('Введите число'));
 
 function cubing (n) {
-    return Math.pow(n, 3)
+    return (n ** 3);
 }
 
 console.log(cubing(num));

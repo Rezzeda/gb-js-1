@@ -18,6 +18,6 @@ function getMaxFromThreeNumbers(a, b, c) {
     return Math.max(a, b, c);
 }
 
-const max = getMaxFromThreeNumbers (firstNum, secondNum, thirdNum);
+const max = getMaxFromThreeNumbers(firstNum, secondNum, thirdNum);
 
 console.log(`Максимальное значение среди чисел ${firstNum}, ${secondNum}, ${thirdNum} равно ${max}.`);
