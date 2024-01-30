@@ -16,14 +16,14 @@
 
 const array = []
 for (let i = 0; i < 5; i++) {
-    array.push(Math.floor(Math.random()*10));
+    array.push(Math.floor(Math.random() * 10));
 }
 console.log("Сгенерированный массив:", array);
 
 //сумма элементов
 function sumElements(array) {
     return array.reduce((currentSum, currentNum) => currentSum + currentNum, 0);
-};
+}
 
 console.log("сумма элементов:", sumElements(array));
 
@@ -36,7 +36,7 @@ for (let i = 0; i < array.length; i++) {
     if (array[i] === 3) {
         newArray.push(i);
     }
-};
+}
 console.log("1 способ. Индексы со значением 3:",newArray);
 
 // Поиск индексов элементов со значением 3 с использованием метода map
