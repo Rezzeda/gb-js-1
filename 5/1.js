@@ -16,5 +16,5 @@ const numbers = {
 };
 
 Object.values(numbers).forEach(element => {
-  element >= 3? console.log(element) : null
+  if (element >= 3) console.log(element);
 });

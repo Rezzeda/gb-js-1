@@ -32,10 +32,10 @@ const products = [
 ];
 
 // 1
-// products.forEach(product => product.photos.length > 0? console.log(product) : null);
+const productsWithPhotos = products.filter(product => product.photos && product.photos.length > 0);
 
-// 2 1 способ
-// console.log(products.sort((a, b) => a.price > b.price ? 1 : -1));
+console.log(productsWithPhotos);
 
-//2 2 способ
+
+//2 
 console.log(products.sort((a, b) => a.price - b.price));
