@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <style>
+        .product-reviews {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        .review {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Форма отзывов</h1>
+        <form id="review-form">
+            <label for="product-select">Выберите продукт:</label>
+            <select id="product-select" required>
+                <option disabled selected value="">Выберите продукт</option>
+            </select>
+            <br>
+            <label for="review-input">Напишите ваш отзыв:</label><br>
+            <input type="text" id="review-input" name="review" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <!-- <script src="1.js"></script> -->
+    <script src="2.js"></script>
+</body>
+</html>
