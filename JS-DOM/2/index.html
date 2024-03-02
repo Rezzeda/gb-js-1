@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <h1 class="title">Случайные фото собак</h1>
+            <p class="image-counter"></p>
+            <div class="carousel">
+                <div class="loader" id="loader">
+                    Загрузка изображений...
+                </div>
+                <template id="image-template">
+                    <img class="img" src="">
+                </template>
+            </div>
+            <div class="indicators"></div>
+            </div>
+            <nav class="slider-nav">
+                <ul>
+                    <li class="arrow">
+                        <button class="previous">
+                            <span class="ion-arrow-left-c">&#8592;</span>
+                        </button>
+                    </li>
+                    <li class="arrow">
+                        <button class="next">
+                            <span class="ion-arrow-right-c">&#8594;</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</body>
+</html>
