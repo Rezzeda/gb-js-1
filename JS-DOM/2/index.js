@@ -10,7 +10,6 @@ const indicatorsContainer = document.querySelector('.indicators');
 
 let imagesData = []; // массив для хранения данных об изображениях
 let currentIndex = 0; // текущий индекс изображения
-let totalImages = 0; // общее количество изображений
 
 // обработчики событий для кнопок "предыдущий" и "следующий"
 previousButton.addEventListener('click', showPreviousImage);
@@ -24,7 +23,7 @@ async function getAllImages() {
     loaderDiv.style.display = 'block';
     try {
         for (let i = 0; i < 5; i++) {
-            await getImageData();
+            await addImageData();
         }
         renderCard();
         renderIndicators(); // вызов функции для отображения индикаторов
@@ -38,7 +37,7 @@ async function getAllImages() {
 }
 
 // Получаем данные для одного изображения
-function getImageData() {
+function addImageData() {
     return fetch(`https://dog.ceo/api/breeds/image/random`)
         .then(response => {
             if (!response.ok) {
@@ -48,9 +47,8 @@ function getImageData() {
         })
         .then(data => {
             imagesData.push(data.message);
-            totalImages++;
         })
-        .catch(error => console.error('Ошибка при загрузке изображения собаки:', error));
+        // .catch(error => console.error('Ошибка при загрузке изображения собаки:', error));
 }
 
 // Функция отображения индикаторов
@@ -86,7 +84,7 @@ function updateIndicators() {
 
 //обновление счетчика картинок
 function updateCounter() {
-    imageCounterEl.textContent = `${currentIndex + 1} / ${totalImages}`;
+    imageCounterEl.textContent = `${currentIndex + 1} / ${imagesData.length}`;
 }
 
 // предыдущая картинка
@@ -108,9 +106,9 @@ function showNextImage() {
 
 // нажатие клавииш переключения
 function keyPress(e) {
-    if (e.keyCode == '37') {
+    if (e.code === 'ArrowLeft') {
         showPreviousImage();
-    } else if (e.keyCode == '39') {
+    } else if (e.code === 'ArrowRight') {
         showNextImage();
     }
 }
