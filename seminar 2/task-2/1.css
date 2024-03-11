@@ -1,0 +1,8 @@
+.modal {
+    display: none;
+    border: 10px solid black;
+}
+
+.active {
+    display: block;
+}

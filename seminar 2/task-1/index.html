@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li a.active {
+            background-color: #f00;
+        }
+        </style>
+        <script defer src="1.js"></script>
+    </head>
+    <body>
+        <nav>
+        <ul class="menu">
+            <li><a class="menu__link active" href="#">Главная</a></li>
+            <li><a class="menu__link" href="#">О нас</a></li>
+            <li><a class="menu__link" href="#">Услуги</a></li>
+            <li><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        }
+    
+        .question {
+        margin-bottom: 20px;
+        }
+    
+        .options {
+        display: flex;
+        flex-direction: column;
+        }
+    
+        label {
+        cursor: pointer;
+        margin-bottom: 10px;
+        }
+    
+        .result {
+        font-weight: bold;
+        }
+
+        .not-checked {
+        border: 3px solid red;
+        }
+
+    </style>
+    <script src="4.js" defer></script>
+    </head>
+    
+    <body>
+    <div class="question">
+        <p>Вопрос 1: Какой ваш любимый цвет?</p>
+        <div class="options">
+        <label>
+            <input type="radio" name="q1" value="Синий"> Синий
+        </label>
+        <label>
+            <input type="radio" name="q1" value="Зеленый"> Зеленый
+        </label>
+        <label>
+            <input type="radio" name="q1" value="Красный"> Красный
+        </label>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p>Вопрос 2: Какое ваше любимое животное?</p>
+        <div class="options">
+        <label>
+            <input type="radio" name="q2" value="Собака"> Собака
+        </label>
+        <label>
+            <input type="radio" name="q2" value="Кот"> Кот
+        </label>
+        <label>
+            <input type="radio" name="q2" value="Попугай"> Попугай
+        </label>
+        </div>
+    </div>
+    
+    <button id="submit">Завершить опрос</button>
+    
+    <div class="result" style="display: none;">
+        <p>Результаты:</p>
+        <div class="answers">
+            <p data-number="1">Вопрос 1: <span></span></p>
+            <p data-number="2">Вопрос 2: <span></span></p>
+        </div>
+    </div>
+    </body>
+    
+    </html>
