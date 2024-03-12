@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="gallery__cards">
+        <template id="card-template">
+            <li class="card">
+                <article aria-label="Место">
+                    <img src="#" alt="фото" class="card__image">
+                    <div class="card__content">
+                        <h2 class="card__title"></h2>
+                        <div class="card__like-container">
+                            <button class="card__btn" type="button"></button>
+                            <span class="card__likes">0</span>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </template>
+    </div>
+</body>
+</html>
